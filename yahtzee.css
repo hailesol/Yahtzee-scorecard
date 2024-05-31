@@ -114,5 +114,5 @@ th:nth-child(3), td:nth-child(3) {
     background-color: green;
 }
 td.scoretype {
-    font-size: 9pt;
+    font-size: 9pt !important;
 }
