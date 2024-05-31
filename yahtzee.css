@@ -113,3 +113,6 @@ th:nth-child(3), td:nth-child(3) {
 .green-background {
     background-color: green;
 }
+td.scoretype {
+    font-size: 9pt;
+}
