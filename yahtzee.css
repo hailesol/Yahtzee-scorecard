@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 75%;
+    max-width: 100%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 10px;
+}
+
+th, td {
+    padding: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 2px;
+}
+
+td {
+    background-color: #fafafa;
+    padding: 4px 2px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 2px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    table {
+        font-size: 8px;
+    }
+
+    th, td {
+        padding: 2px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 1px;
+        font-size: 8px;
+        text-align: center;
+    }
+}
+
+/* Set specific widths for columns */
+th:first-child, td:first-child {
+    width: 20%; /* Adjust as needed */
+}
+
+th:nth-child(2), td:nth-child(2),
+th:nth-child(3), td:nth-child(3) {
+    width: 40%; /* Adjust as needed */
+}
+.red-background {
+    background-color: red;
+}
+
+.green-background {
+    background-color: green;
+}
