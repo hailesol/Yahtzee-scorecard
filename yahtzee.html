@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Compact Table</title>
+    <link rel="stylesheet" href="yahtzee.css">
+    <script src="yahtzee.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Yahtzee Scorecard!</h1>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Players</th>
+                    <th>Player 1</th>
+                    <th>Player 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 24 Rows -->
+                <tr>
+                    <td>Ones</td>
+                    <td>
+                        <select name="entry1-1">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                 </select>
+                </td>
+                    <td>
+                        <select name="entry2-1">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                 </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Twos</td>
+                    <td>
+                        <select name="entry1-2">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                 </select>
+                </td>
+                    <td>
+                        <select name="entry2-2">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                 </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Threes</td>
+                    <td>
+                        <select name="entry1-3">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="9">9</option>
+                        <option value="12">12</option>
+                        <option value="15">15</option>
+                 </select>
+                </td>
+                    <td>
+                        <select name="entry2-3">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="9">9</option>
+                        <option value="12">12</option>
+                        <option value="15">15</option>
+                 </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Fours</td>
+                    <td>
+                        <select name="entry1-4">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="12">12</option>
+                        <option value="16">16</option>
+                        <option value="20">20</option>
+                 </select>
+                </td>
+                    <td>
+                        <select name="entry2-4">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="12">12</option>
+                        <option value="16">16</option>
+                        <option value="20">20</option>
+                 </select>
+                </tr>
+                <tr>
+                    <td>Fives</td>
+                    <td>
+                        <select name="entry1-5">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                 </select>
+                </td>
+                    <td>
+                        <select name="entry2-5">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                 </select>
+                </tr>
+                <tr>
+                    <td>Sixes</td>
+                    <td>
+                    <select name="entry1-6">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                        <option value="18">18</option>
+                        <option value="24">24</option>
+                        <option value="30">30</option>
+                 </select>
+                </td>
+                    <td>
+                        <select name="entry2-6">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                        <option value="18">18</option>
+                        <option value="24">24</option>
+                        <option value="30">30</option>
+                 </select>
+                 </td>
+                </tr>
+                <tr>
+                    <td>Upper Total</td>
+                    <td id="ut1"></td>
+                    <td id="ut2"></td>
+                </tr>
+                <tr>
+                    <td>Upper Bonus</td>
+                    <td id="ub1"></td>
+                    <td id="ub2"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td>3 of a Kind</td>
+                    <td><select name="entry1-7">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                        <option value="15">15</option>
+                        <option value="18">18</option>
+                        </select>
+                        </td>
+                    <td><select name="entry2-7">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                        <option value="15">15</option>
+                        <option value="18">18</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4 of a Kind</td>
+                    <td><select name="entry1-8">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="16">16</option>
+                        <option value="20">20</option>
+                        <option value="24">24</option>
+                    </select>
+                </td>
+                    <td><select name="entry2-8">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="16">16</option>
+                        <option value="20">20</option>
+                        <option value="24">24</option>
+                        </select>
+                        </td>
+                </tr>
+                <tr>
+                    <td>Full House</td>
+                    <td><select name="entry1-9">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="25">25</option>
+                    </select>
+                </td>
+                    <td><select name="entry2-9">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="25">25</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Small Straight</td>
+                    <td><select name="entry1-10">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="30">30</option>
+                    </select>
+                </td>
+                    <td><select name="entry2-10">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="30">30</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Large Straight</td>
+                    <td><select name="entry1-11">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="40">40</option>
+                    </select>
+                </td>
+                    <td><select name="entry2-11">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="40">40</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Yahtzee!!</td>
+                    <td><select name="entry1-12">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="50">50</option>
+                    </select>
+                </td>
+                    <td><select name="entry2-12">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="50">50</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Chance</td>
+                    <td><select name="entry1-13">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                    </td>
+                    <td><select name="entry2-13">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BONUS YAHTZEE!!</td>
+                    <td><select name="entry1-14">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="100">100</option>
+                    </select>
+                </td>
+                    <td><select name="entry2-14">
+                        <option value="">  </option>
+                        <option value="blank">-</option>
+                        <option value="100">100</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Lower Total</td>
+                    <td id="lt1"></td>
+                    <td id="lt2"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td>TOTAL SCORE</td>
+                    <td id="ts1"></td>
+                    <td id="ts2"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
