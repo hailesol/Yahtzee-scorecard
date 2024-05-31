@@ -120,3 +120,9 @@ td.blankrow {
     height: 10pt;
     background-color: #ececec;
 }
+td.cpu {
+    font-size: 9pt;
+}
+td.totalscore {
+    font-weight: bold;
+}
