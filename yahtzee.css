@@ -116,3 +116,7 @@ th:nth-child(3), td:nth-child(3) {
 td.scoretype {
     font-size: 9pt !important;
 }
+td.blankrow {
+    height: 10pt;
+    background-color: #ececec;
+}
